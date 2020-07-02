@@ -1,0 +1,9 @@
+require.config({
+    paths:{
+        'jquery':'./jquery',
+        'login':'./lib/login'
+    }
+})
+require(['jquery','login'],function($,login){
+    login.render();
+})
