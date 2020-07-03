@@ -303,6 +303,7 @@
   width: 336px;
   height: 34px;
   box-sizing: border-box;
+  position: relative;
   padding-right: 15px;
 }
 .banner-warp .banner-content .banner-container > .form-box > form > div > div > input {
@@ -318,6 +319,22 @@
   background-image: none;
   border: 1px solid #ccc;
   border-radius: 2px;
+}
+.banner-warp .banner-content .banner-container > .form-box > form > div > div .sunAdd {
+  position: absolute;
+  width: 120px;
+  height: 50px;
+  z-index: 7;
+  box-sizing: border-box;
+  padding: 9px;
+  background-color: #f5f5f5;
+  right: -105px;
+  bottom: -40px;
+  font-size: 14px;
+  border: 1px solid #555;
+  border-radius: 2px;
+  color: #333;
+  display: none;
 }
 .banner-warp .banner-content .banner-container > .form-box > form > div > #btn {
   margin-left: 112px;
@@ -350,6 +367,10 @@
   height: 34px;
   padding: 6px 12px;
   margin-right: 30px;
+}
+.banner-warp .banner-content .banner-container > .form-box > form > .yjvg > div i {
+  display: inline-block;
+  width: 42px !important;
 }
 .banner-warp .banner-content .banner-container > .form-box > form > .yjvg > div > span {
   padding: 5px 10px;

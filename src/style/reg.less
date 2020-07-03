@@ -339,6 +339,7 @@
                         width: 336px;
                         height: 34px;
                         box-sizing: border-box;
+                        position: relative;
                         padding-right: 15px;
                         >input{
                             box-sizing: border-box;
@@ -353,6 +354,23 @@
                             background-image: none;
                             border: 1px solid #ccc;
                             border-radius: 2px;
+                        }
+                        .sunAdd{
+                            position:absolute;
+                            width: 120px;
+                            height: 50px;
+                            z-index: 7;
+                            box-sizing: border-box;
+                            padding: 9px;
+                            background-color: #f5f5f5;
+                            right: -105px;
+                            bottom: -40px;
+                            font-size: 14px;
+                            border: 1px solid #555;
+                            
+                            border-radius: 2px;
+                            color: #333;
+                            display: none;
                         }
                     }
                     >#btn{
@@ -389,9 +407,9 @@
                             padding: 6px 12px;
                             margin-right: 30px;
                         }
-                        img{
-                            // float: right;
-                            // display: inline-block;
+                        i{
+                            display: inline-block;
+                            width: 42px !important;
                         }
                         >span{
                             padding: 5px 10px;

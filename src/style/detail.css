@@ -248,8 +248,11 @@
   height: 478px;
   margin-top: 28px;
   float: left;
+  position: relative;
+  overflow: hidden;
 }
 .detail-warp .detail-container .row .col-md-7 .detail-piclist i {
+  position: absolute;
   width: 72px;
   height: 24px;
   display: block;
@@ -258,13 +261,24 @@
   line-height: 24px;
   transform: rotate(90deg);
 }
-.detail-warp .detail-container .row .col-md-7 .detail-piclist ul {
+.detail-warp .detail-container .row .col-md-7 .detail-piclist #myi2 {
+  bottom: 0px;
+}
+.detail-warp .detail-container .row .col-md-7 .detail-piclist .mylibox {
+  height: 420px;
+  width: 72px;
+  margin-top: 25px;
+  overflow: hidden;
+  position: relative;
+}
+.detail-warp .detail-container .row .col-md-7 .detail-piclist .mylibox > ul {
+  position: absolute;
   height: 420px;
   width: 72px;
   display: flex;
   flex-direction: column;
 }
-.detail-warp .detail-container .row .col-md-7 .detail-piclist ul li {
+.detail-warp .detail-container .row .col-md-7 .detail-piclist .mylibox > ul li {
   height: 72px;
   width: 100%;
   box-sizing: border-box;
@@ -273,14 +287,14 @@
   margin-top: 10px;
   display: block;
 }
-.detail-warp .detail-container .row .col-md-7 .detail-piclist ul li a {
+.detail-warp .detail-container .row .col-md-7 .detail-piclist .mylibox > ul li a {
   display: block;
   height: 100%;
   font-size: 0;
   text-align: center;
   line-height: 64px;
 }
-.detail-warp .detail-container .row .col-md-7 .detail-piclist ul li a img {
+.detail-warp .detail-container .row .col-md-7 .detail-piclist .mylibox > ul li a img {
   height: 100%;
   width: 100%;
 }
@@ -322,6 +336,7 @@
   box-sizing: border-box;
   display: flex;
   font-size: 14px;
+  position: relative;
 }
 .detail-warp .detail-container .row .col-md-5 .detail-address > .det-add-info > div {
   margin: 0 10px;
@@ -335,6 +350,47 @@
 .detail-warp .detail-container .row .col-md-5 .detail-address > .det-add-info .haveshop {
   padding-left: 10px;
   font-weight: 600;
+}
+.detail-warp .detail-container .row .col-md-5 .detail-address > .det-add-info .det-alladd {
+  position: absolute;
+  display: none;
+  border: 1px solid #ddd;
+  width: 548px;
+  height: 334px;
+  box-sizing: border-box;
+  padding: 15px;
+  background-color: white;
+  top: 25px;
+}
+.detail-warp .detail-container .row .col-md-5 .detail-address > .det-add-info .det-alladd > ul {
+  width: 506px;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.detail-warp .detail-container .row .col-md-5 .detail-address > .det-add-info .det-alladd > ul > li {
+  box-sizing: border-box;
+  padding: 5px 10px;
+  margin-right: 5px;
+}
+.detail-warp .detail-container .row .col-md-5 .detail-address > .det-add-info .det-alladd > ul > li > ol {
+  position: absolute;
+  z-index: 9;
+  top: 40px;
+  left: 0;
+  width: 518px;
+  height: 306px;
+  display: none;
+}
+.detail-warp .detail-container .row .col-md-5 .detail-address > .det-add-info .det-alladd > ul > li > ol > li {
+  float: left;
+  width: 25%;
+  margin-bottom: 10px;
+  height: 20px;
+  box-sizing: border-box;
+  color: #333;
+  font-size: 14px;
 }
 .detail-warp .detail-container .row .col-md-5 .detail-numcontainer {
   width: 445px;

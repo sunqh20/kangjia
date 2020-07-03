@@ -286,42 +286,60 @@
                     height: 478px;
                     margin-top: 28px;
                     float: left;
+                    position: relative;
+                    overflow: hidden;
                     i{
+                        position: absolute;
                         width: 72px;
                         height: 24px;
                         display: block;
-                        // background-color: skyblue;
+                        
                         text-align: center;
                         font-size: 24px;
                         line-height: 24px;
                         transform: rotate(90deg);
                     }
-                    ul{
+                    #myi2{
+                        bottom: 0px;
+                        // margin-top: 300px;
+                    }
+                    .mylibox{
                         height: 420px;
                         width: 72px;
-                        display: flex;
-                        flex-direction: column;
-                        li{
-                            height: 72px;
-                            width: 100%;
-                            box-sizing: border-box;
-                            border: 1px solid #e3e3e3;
-                            padding: 2px;
-                            margin-top: 10px;
-                            display: block;
-                            a{
+                        margin-top: 25px;
+                        overflow: hidden;
+                        position: relative;
+                        >ul{
+                            position: absolute;
+                            height: 420px;
+                            width: 72px;
+                            display: flex;
+                            flex-direction: column;
+                            // overflow: hidden;
+                            
+                            li{
+                                height: 72px;
+                                width: 100%;
+                                box-sizing: border-box;
+                                border: 1px solid #e3e3e3;
+                                padding: 2px;
+                                margin-top: 10px;
                                 display: block;
-                                height: 100%;
-                                font-size: 0;
-                                text-align: center;
-                                line-height: 64px;
-                                img{
+                                a{
+                                    display: block;
                                     height: 100%;
-                                    width: 100%;
+                                    font-size: 0;
+                                    text-align: center;
+                                    line-height: 64px;
+                                    img{
+                                        height: 100%;
+                                        width: 100%;
+                                    }
                                 }
                             }
                         }
                     }
+                    
 
                 }
             }
@@ -368,6 +386,7 @@
                         box-sizing: border-box;
                         display: flex;
                         font-size: 14px;
+                        position: relative;
                         >div{
                             margin: 0 10px;
                             >span{
@@ -382,6 +401,55 @@
                             padding-left: 10px;
                             font-weight: 600;
                         }
+                        .det-alladd{
+                            position: absolute;
+                            display:none;
+                            border: 1px solid #ddd;
+                            width: 548px;
+                            height: 334px;
+                            box-sizing: border-box;
+                            padding: 15px;
+                            background-color: white;
+                          
+                            // opacity: 0.4;
+                            top: 25px;
+                            >ul{
+                                width: 506px;
+                                height: 32px;
+                                display: flex;
+                                flex-direction: row;
+                                position: relative;
+                              
+                                >li{
+                                    box-sizing: border-box;
+                                    padding: 5px 10px;
+                                    margin-right: 5px;
+                                    
+                                    >ol{
+                                        position: absolute;
+                                        z-index: 9;
+                                        top:40px;
+                                        left: 0;
+                                        width: 518px;
+                                        height: 306px;
+                                        display: none;
+                                        >li{
+                                            float: left;
+                                            width: 25%;
+                                            margin-bottom: 10px;
+                                            height: 20px;
+                                            box-sizing: border-box;
+                                            color: #333;
+                                            font-size: 14px;
+        
+                                        }
+                                    }
+
+                                }
+                            }
+                            
+                        }
+
                     }
                 }
 
