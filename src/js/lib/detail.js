@@ -124,15 +124,15 @@ define(['jquery', 'cookie'], function ($, cookie) {
             $('.detail-bigpic>a').on({
                 'mouseover': function (ev) {
                     $('.detail-bigpic img').css({
-                        'width': '800px',
-                        'height': '800px'
+                        'width': '900px',
+                        'height': '900px'
                     })
                 },
                 'mousemove': function (ev) {
                     let x = ev.pageX - $(this).offset().left;
                     let y = ev.pageY - $(this).offset().top;
-                    let resx = parseInt((x / 530) * (800 - 530));
-                    let resy = parseInt((y / 530) * (800 - 530));
+                    let resx = parseInt((x / 530) * (900 - 530));
+                    let resy = parseInt((y / 530) * (900 - 530));
                     $('.detail-bigpic img').css({
                         'top': `-${resy}px`,
                         'left': `-${resx}px`,
