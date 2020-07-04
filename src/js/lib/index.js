@@ -2,12 +2,11 @@ let baseUrl = 'http://localhost/web2003/week7/day35/khjx';
 
 define(['jquery','slider','cookie'], function ($,slider,cookie) {
     return {
-        rander: function () {
+        rander: function (callback) {
             
             $.ajax({
                 type: "get",
                 url: `${baseUrl}/interface/getall.php`,
-                // data: "data",
                 dataType: "json",
                 success: function (data) {
                     let str = ''
@@ -19,7 +18,6 @@ define(['jquery','slider','cookie'], function ($,slider,cookie) {
                         <div>${element.product_detail}</div>
                         <p>￥${element.product_nprice} <span class="del">&nbsp;￥${element.product_pprice}</span></p>
                     </div>`
-                        // console.log(element)
                     });
                     $('.myrow').append(str);
                 }
@@ -27,11 +25,26 @@ define(['jquery','slider','cookie'], function ($,slider,cookie) {
             $('.slider').slider({
                 delay:5000
             })
-            
-            
-
+            callback && callback()
         },
-        
+        indexfloor:function(){
+            $('.anchor-container li').on('click',function(){
+                $('html,body').animate({
+                    scrollTop:$(`${$(this).attr('title')}`).offset().top-50
+                })
+                return false;
+            })
+            $(window).on('scroll',function(){
+                let top = $('html,body').scrollTop();
+                if(top<540){
+                    $('.anchor-container').fadeOut(1000);
+                }else{
+                    $('.anchor-container').fadeIn(1000);
+                }
+                console.log($('html,body').scrollTop())
+            })
+            
+        }
     }
 
 });

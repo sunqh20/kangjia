@@ -12,10 +12,6 @@ require.config({
     }
 });
 
-// require(['slider'],function(slider){
-
-// })
-
 require(['index', 'cookie', 'jquery'], function (index, cookie, $) {
     let myuser = cookie.get('username');
     if(myuser){
@@ -32,8 +28,7 @@ require(['index', 'cookie', 'jquery'], function (index, cookie, $) {
         $('.topbar-top').html(str1);
         
     })
-    console.log($('#myexit'))
-    // console.log(myuser)
-
-    index.rander();
+    index.rander(function(){
+        index.indexfloor();
+    });
 })
