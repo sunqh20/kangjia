@@ -71,6 +71,7 @@ define(['jquery', 'cookie'], function ($, cookie) {
 
         },
         
+        // 删除cookie数据
         delShopcar:function(id){
             let shop = cookie.get('shop');
             let arr = JSON.parse(shop)
@@ -86,6 +87,7 @@ define(['jquery', 'cookie'], function ($, cookie) {
 
         },
 
+        // 多选input的统计
         addclick: function(){
             $('.shop-warp').on('click',function(ev){
                 let numall= 0;

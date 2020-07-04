@@ -15,6 +15,7 @@ require(['jquery','detail'],function($,detail){
         detail.myevent();
         detail.picListEv();
         detail.addressEv();
+        detail.floorEv();
     })
     
 })

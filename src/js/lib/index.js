@@ -27,6 +27,8 @@ define(['jquery','slider','cookie'], function ($,slider,cookie) {
             })
             callback && callback()
         },
+
+        // 楼梯效果
         indexfloor:function(){
             $('.anchor-container li').on('click',function(){
                 $('html,body').animate({

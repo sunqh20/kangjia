@@ -505,6 +505,225 @@
   width: 100%;
   display: block;
 }
+.detail-warp .detail-container .detail-main .detail-m-box .detail-box-bot .detail-params {
+  width: 1108px;
+  min-height: 42px;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+.detail-warp .detail-container .detail-main .detail-m-box .detail-box-bot .detail-params > p {
+  width: 1078px;
+  height: 42px;
+  box-sizing: border-box;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  font-size: 22px;
+}
+.detail-warp .detail-container .detail-main .detail-m-box .detail-box-bot > .comment {
+  width: 1108px;
+  min-height: 127px;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.detail-warp .detail-container .detail-main .detail-m-box .detail-box-bot > .comment > .pre-service {
+  width: 1078px;
+  height: 42px;
+  display: block;
+  font-size: 22px;
+  box-sizing: border-box;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.detail-warp .detail-container .detail-main .detail-m-box .detail-box-bot > .comment > .comment-list {
+  width: 1078px;
+  min-height: 35px;
+}
+.detail-warp .detail-container .detail-main .detail-m-box .detail-box-bot > .comment > .comment-list > .more {
+  border: 1px solid #ccc;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  margin-top: 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  background: #f8f8f8;
+}
+.detail-warp .detail-container .detail-main .detail-m-box .detail-box-bot > .comment > .comment-list > .more > p {
+  width: 1076px;
+  height: 35px;
+  box-sizing: border-box;
+  line-height: 35px;
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+}
+.detail-warp .detail-container .detail-main .detail-m-box .detail-box-bot > .detail-service {
+  width: 1108px;
+  height: 118px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.detail-warp .detail-container .detail-main .detail-m-box .detail-box-bot > .detail-service > p {
+  width: 1078px;
+  height: 42px;
+  display: block;
+  font-size: 22px;
+  box-sizing: border-box;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.detail-warp .detail-container .detail-main .detail-m-box .detail-box-bot > .detail-service > div {
+  width: 1068px;
+  height: 26px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #333333;
+  line-height: 26px;
+}
+.detail-warp .detail-container .detail-main .detail-m-box .detail-box-bot > .service-end {
+  width: 1108px;
+  height: 661px;
+  box-sizing: border-box;
+  border-top: 1px solid #ddd;
+}
+.detail-warp .detail-container .detail-main .detail-m-box .detail-box-bot > .service-end > .want {
+  width: 1108px;
+  height: 81px;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+.detail-warp .detail-container .detail-main .detail-m-box .detail-box-bot > .service-end > .want > a {
+  height: 40px;
+  width: 80px;
+  background: #ed1c24;
+  display: inline-block;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+}
+.detail-warp .detail-container .detail-main .detail-m-box .detail-box-bot > .service-end > .nav-pub {
+  width: 1108px;
+  height: 60px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.detail-warp .detail-container .detail-main .detail-m-box .detail-box-bot > .service-end > .nav-pub > ul {
+  width: 1068px;
+  height: 20px;
+}
+.detail-warp .detail-container .detail-main .detail-m-box .detail-box-bot > .service-end > .nav-pub > ul > li {
+  width: 66px;
+  height: 20px;
+  box-sizing: border-box;
+  padding: 0 5px;
+  float: left;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+}
+.detail-warp .detail-container .detail-main .detail-m-box .detail-box-bot > .service-end > .nav-pub > ul > .active {
+  background: #ed1c24;
+  color: #fff;
+}
+.detail-warp .detail-container .detail-main .detail-m-box .detail-box-bot > .service-end > .public {
+  width: 1108px;
+  height: 519px;
+  box-sizing: border-box;
+  border-top: 1px solid #ddd;
+}
+.detail-warp .detail-container .detail-main .detail-m-box .detail-box-bot > .service-end > .public > h5 {
+  width: 1108px;
+  height: 64px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ddd;
+  line-height: 63px;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.detail-warp .detail-container .detail-main .detail-m-box .detail-box-bot > .service-end > .public > form {
+  width: 1108px;
+  height: 434px;
+}
+.detail-warp .detail-container .detail-main .detail-m-box .detail-box-bot > .service-end > .public > form > .public-list {
+  width: 1108px;
+  height: 434px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.detail-warp .detail-container .detail-main .detail-m-box .detail-box-bot > .service-end > .public > form > .public-list > .all {
+  width: 1068px;
+  height: 27px;
+}
+.detail-warp .detail-container .detail-main .detail-m-box .detail-box-bot > .service-end > .public > form > .public-list > .all > label {
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  margin-left: 3px;
+  margin-bottom: 5px;
+}
+.detail-warp .detail-container .detail-main .detail-m-box .detail-box-bot > .service-end > .public > form > .public-list > .public-text {
+  width: 1068px;
+  height: 205px;
+  box-sizing: border-box;
+  padding-right: 200px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.detail-warp .detail-container .detail-main .detail-m-box .detail-box-bot > .service-end > .public > form > .public-list > .public-text > textarea {
+  width: 868px;
+  height: 180px;
+  padding: 2px;
+  color: #666;
+  border-color: #ddd;
+}
+.detail-warp .detail-container .detail-main .detail-m-box .detail-box-bot > .service-end > .public > form > .public-list > .public-text > p {
+  width: 868px;
+  height: 20px;
+  display: block;
+  margin-bottom: 10px;
+  text-align: right;
+  color: #999;
+  font-size: 14px;
+  line-height: 1.42857143;
+}
+.detail-warp .detail-container .detail-main .detail-m-box .detail-box-bot > .service-end > .public > form > .public-list > .public-phone {
+  width: 1068px;
+  height: 26px;
+  margin-bottom: 20px;
+}
+.detail-warp .detail-container .detail-main .detail-m-box .detail-box-bot > .service-end > .public > form > .public-list > .public-phone > span {
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #666;
+}
+.detail-warp .detail-container .detail-main .detail-m-box .detail-box-bot > .service-end > .public > form > .public-list > .public-phone > input {
+  width: 173px;
+  height: 19px;
+  box-sizing: border-box;
+  border: 1px solid #767676;
+  padding: 1px;
+}
+.detail-warp .detail-container .detail-main .detail-m-box .detail-box-bot > .service-end > .public > form > .public-list > button {
+  height: 40px;
+  width: 80px;
+  background: #ed1c24;
+  display: inline-block;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  padding: 0;
+  box-sizing: border-box;
+  display: block;
+}
 .footer-link-warp {
   width: 100%;
   height: 535px;

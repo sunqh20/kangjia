@@ -97,6 +97,8 @@ define(['jquery', 'cookie'], function ($, cookie) {
                 }
             });
         },
+
+        // 添加购物车信息到cookie
         additem: function (id, num, price) {
             let shop = cookie.get('shop')
             let product = {
@@ -120,6 +122,7 @@ define(['jquery', 'cookie'], function ($, cookie) {
             cookie.set('shop', JSON.stringify(shop), 1)
         },
 
+        // 放大镜效果
         myevent: function () {
             $('.detail-bigpic>a').on({
                 'mouseover': function (ev) {
@@ -150,6 +153,7 @@ define(['jquery', 'cookie'], function ($, cookie) {
             })
         },
 
+        // 图片展示的上下移动
         picListEv: function () {
             $('.myliev').on('mouseover', 'img', function (el) {
                 $('.detail-bigpic img')[0].src = this.src;
@@ -166,6 +170,21 @@ define(['jquery', 'cookie'], function ($, cookie) {
                 }
             })
         },
+
+        // 详情的楼梯效果
+        floorEv: function () {
+            $('a[title^="#detail-id-"]').on('click',function(){
+                $(this).parent().addClass('active').siblings().removeClass('active')
+                console.log();
+                $('html,body').animate({
+                    scrollTop:$(`${this.title}`).offset().top - 50
+                })
+                return false;
+                
+            });
+        },
+
+        // 送货地址的三级菜单
         addressEv: function () {
             $('#myaddress').on('click', function () {
                 $.ajax({
@@ -219,7 +238,6 @@ define(['jquery', 'cookie'], function ($, cookie) {
                 });
             })
         }
-
     }
 
 });
