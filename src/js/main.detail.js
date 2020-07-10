@@ -8,8 +8,9 @@ require.config({
 
 require(['jquery','detail'],function($,detail){
     detail.render(function(id,price){
-        $('#detail-row').on('click',function(){
+        $('#detail-row').on('click',function(ev){
             detail.additem(id,$('#number').val(),price)
+            ev.preventDefault()
         });
         
         detail.myevent();

@@ -22,6 +22,7 @@ define(['jquery','slider','cookie'], function ($,slider,cookie) {
                     $('.myrow').append(str);
                 }
             });
+            // 轮播图
             $('.slider').slider({
                 delay:5000
             })

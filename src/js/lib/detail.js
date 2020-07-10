@@ -100,6 +100,13 @@ define(['jquery', 'cookie'], function ($, cookie) {
 
         // 添加购物车信息到cookie
         additem: function (id, num, price) {
+            let n = '1234567890'
+            for(let i = 0;i<$('#number').val().length;i++){
+                if(n.indexOf($('#number').val()[i]) == -1){
+                    alert('数量错误')
+                    return 
+                }
+            }
             let shop = cookie.get('shop')
             let product = {
                 id: id,
